@@ -12,13 +12,13 @@ You need a working copy of peq-multimarkdown in your `PATH`
 	make latextest
 	cp multimarkdown /usr/bin
 
-You also need a working Tex distribution. On my local machine I use the [MacTex](http://www.tug.org/mactex/) disribution. Please check the appropiate installation manuals.
+You also need a working Tex distribution. On my local machine I use the [MacTex](http://www.tug.org/mactex/) distribution. Please check the appropriate installation manuals.
 
 You also need the `peg-multimarkdown-latex-support` support files
 
 	git clone git://github.com/fletcher/peg-multimarkdown-latex-support.git
 
-You have to check where to put the local `texmf` files. For my local installation I had to crate a directory
+You have to check where to put the local `texmf` files. For my local installation I had to create a directory
 
 	mkdir -p ~/Library/texmf/tex/latex/mmd/
 	cp peg-multimarkdown-latex-support/* ~/Library/texmf/tex/latex/mmd/
