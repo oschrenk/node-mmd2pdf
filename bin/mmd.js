@@ -9,4 +9,4 @@ require.paths.unshift(path.join(__dirname, '..', 'lib'));
 var mmd = require('MultiMarkdown');
 
 var arguments = cli.args;
-new MultiMarkdown(arguments).process();
+new MultiMarkdown(arguments).pdf();
