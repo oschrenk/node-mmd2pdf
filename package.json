@@ -4,7 +4,6 @@
 , "description": "MultiMarkdown processing."
 , "author": "Oliver Schrenk <oliver.schrenk@gmail.com> (http://www.oschrenk.com)"
 , "keywords" : [ "markdown", "markup", "mmd" ]
-, "man" : "./man/mmd.1"
 , "repository":
   { "type" : "git"
   , "url" : "https://github.com/platzhaltr/node-mmd.git"
