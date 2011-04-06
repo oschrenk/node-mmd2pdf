@@ -1,5 +1,7 @@
 # README #
 
+You need a working copy of peq-multimarkdown in your `PATH`
+
 	git clone git://github.com/fletcher/peg-multimarkdown.git
 	cd peg-multimarkdown
 	./update_submodules.sh
@@ -8,29 +10,19 @@
 	make test
 	make mmdtest
 	make latextest
-	
-## API ##
+	cp multimarkdown /usr/bin
 
-	var mmd = require(./multimarkdown);
-	var htmlstring = mmd.html(string); 
-	var latextstring = mmm.latex(string);
+You also need a working Tex distribution. On my local machine I use the [MacTex](http://www.tug.org/mactex/) disribution. Please check the appropiate installation manuals.
 
-## How ##
+You also need the `peg-multimarkdown-latex-support` support files
 
-Spawn child processes
+	git clone git://github.com/fletcher/peg-multimarkdown-latex-support.git
 
-	// http://nodejs.org/api.html#_child_processes
-	var sys = require('sys')
-	var exec = require('child_process').exec;
-	var child;
+You have to check where to put the local `texmf` files. For my local installation I had to crate a directory
 
-	// executes `pwd`
-	child = exec("pwd", function (error, stdout, stderr) {
-	  sys.print('stdout: ' + stdout);
-	  sys.print('stderr: ' + stderr);
-	  if (error !== null) {
-	    console.log('exec error: ' + error);
-	  }
-	});
+	mkdir -p ~/Library/texmf/tex/latex/mmd/
+	cp peg-multimarkdown-latex-support/* ~/Library/texmf/tex/latex/mmd/
 
-[Child Processes](http://nodejs.org/docs/v0.4.4/api/child_processes.html)
+Finally you need a working installation of [node.js](http://nodejs.org/) and [npm](http://npmjs.org/) and the following modules:
+
+	npm install temp
