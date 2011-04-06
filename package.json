@@ -1,5 +1,5 @@
 { "name": "mmd"
-, "version": "0.0.1"
+, "version": "0.1"
 , "engines": [ "node >=0.4.0" ]
 , "description": "MultiMarkdown processing."
 , "author": "Oliver Schrenk <oliver.schrenk@gmail.com> (http://www.oschrenk.com)"
