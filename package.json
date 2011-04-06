@@ -1,0 +1,13 @@
+{ "name": "mmd"
+, "version": "0.0.1"
+, "engines": [ "node >=0.4.0" ]
+, "description": "MultiMarkdown processing."
+, "author": "Oliver Schrenk <oliver.schrenk@gmail.com> (http://www.oschrenk.com)"
+, "keywords" : [ "markdown", "markup", "mmd" ]
+, "man" : "./man/mmd.1"
+, "repository":
+  { "type" : "git"
+  , "url" : "https://github.com/platzhaltr/node-mmd.git"
+  }
+, "bin" : { "mmd" : "./bin/mmds.js" }
+}
